@@ -36,11 +36,22 @@
 
 .App-buttons {
   position: absolute;
-  top: 60%;
-  right: 40px; /* Adjust as needed */
+  top: 50%; /* Adjust top position for vertical centering */
+  right: 0;
+  left: 0;
   transform: translateY(-50%); /* Center buttons vertically */
   display: flex;
   flex-direction: column;
+  align-items: center; /* Center buttons horizontally */
+  justify-content: center; /* Center buttons horizontally by default */
+}
+
+@media (min-width: 769px) {
+  .App-buttons {
+    justify-content: flex-end; /* Align buttons to the right on big devices */
+    right: 20px; /* Add some space from the right edge */
+    left: auto; /* Remove left alignment */
+  }
 }
 
 .App-button {
@@ -71,3 +82,32 @@
   transform: scale(0.95); /* Slightly shrink button on click */
 }
 
+.App-heading {
+  color: #fc0330; /* Sea green color */
+  font-size: 60px; /* Adjust as needed */
+  margin-top: 20px; /* Space above the heading */
+  display: none; /* Hide by default */
+}
+
+@media (max-width: 768px) {
+  .App-buttons {
+    top: 20px; /* Adjust the top position for smaller devices */
+    transform: none; /* Remove vertical centering transform */
+    flex-direction: column; /* Stack buttons vertically */
+    align-items: center; /* Center buttons horizontally */
+  }
+
+  .App-button {
+    padding: 10px 30px; /* Smaller button size */
+    font-size: 14px; /* Smaller font size */
+    margin-bottom: 10px; /* Space between buttons */
+  }
+
+  .App-button svg {
+    margin-right: 5px; /* Reduce space between icon and text */
+  }
+
+  .App-heading {
+    display: block; /* Show heading on smaller devices */
+  }
+}

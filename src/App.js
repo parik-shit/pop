@@ -8,7 +8,7 @@ function App() {
       <header className="App-header">
         <div className="App-image-container">
           <img
-            src={`${process.env.PUBLIC_URL}/goodpop_1.svg`}
+            src={`${process.env.PUBLIC_URL}/pop_1.jpeg`}
             className="App-logo"
             alt="logo"
           />
@@ -37,6 +37,7 @@ function App() {
             >
               <GiPineapple size={24} /> Pineapple
             </a>
+            <h1 className="App-heading">PINEAPPLE PIZZA CLUB</h1>
           </div>
         </div>
       </header>
