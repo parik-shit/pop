@@ -8,7 +8,7 @@ function App() {
       <header className="App-header">
         <div className="App-image-container">
           <img
-            src={`${process.env.PUBLIC_URL}/goodpop.svg`}
+            src={`${process.env.PUBLIC_URL}/goodpop_1.svg`}
             className="App-logo"
             alt="logo"
           />
