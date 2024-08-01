@@ -8,18 +8,15 @@ html, body {
 .App {
   height: 100vh; /* Set the height to the full viewport height */
   overflow-y: auto; /* Enable scrolling */
-  position: relative;
 }
 
 .wrapper {
   height: 200vh; /* Set the height to twice the viewport height */
-  will-change: transform; /* Optimizes performance for transform changes */
 }
 
 .image-container {
   height: 100vh; /* Set the height to the full viewport height */
   width: 100%;
-  position: relative;
 }
 
 .image {
@@ -27,34 +24,3 @@ html, body {
   height: 100%;
   object-fit: cover; /* Ensure the image covers the area */
 }
-
-/* Style for the buttons container */
-.buttons-container {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 10px;
-  z-index: 1000; /* Ensure buttons are on top of other elements */
-}
-
-.btn {
-  padding: 10px 20px;
-  border: none;
-  background-color: #007bff;
-  color: white;
-  font-size: 16px;
-  border-radius: 5px;
-  cursor: pointer;
-  opacity: 0; /* Start with buttons hidden */
-  transform: translateY(50px); /* Start with buttons off-screen */
-  transition: opacity 0.3s, transform 0.3s; /* Smooth transition */
-}
-
-.btn:hover {
-  background-color: #0056b3;
-}
-
